@@ -1,0 +1,11 @@
+img{
+    width: 8rem;
+    height: 5rem;
+    margin-right: 15px;
+}
+
+@media (max-width: 710px){
+    .navbar{
+        width: 105%;
+    }
+}

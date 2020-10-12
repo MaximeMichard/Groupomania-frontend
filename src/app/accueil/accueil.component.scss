@@ -1,0 +1,17 @@
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    padding:2rem 0rem;
+}
+@media(max-width: 430px){
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 25px;
+    }
+}
