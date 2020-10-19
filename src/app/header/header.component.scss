@@ -9,3 +9,22 @@ img{
         width: 105%;
     }
 }
+li{
+    position: relative;
+    margin:0px 20px;
+}
+
+li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+li:hover::after{
+    transform: scale(1);
+}
