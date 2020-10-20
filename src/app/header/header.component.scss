@@ -14,17 +14,17 @@ li{
     margin:0px 20px;
 }
 
-li::after {
+a::after {
     content: "";
     display: block;
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 3px;
     background: #fff;
     transform: scale(0);
     transition: transform 0.2s ease-in-out;
 }
 
-li:hover::after{
+a:hover::after{
     transform: scale(1);
 }
