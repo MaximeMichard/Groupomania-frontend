@@ -28,7 +28,6 @@ export class SigninComponent implements OnInit {
   onSubmit(form:NgForm){
     if(this.user.email != null  && this.user.password != null){
       this.userservice.loginUser(this.user).subscribe(response =>{
-        console.log(response);
         if(response.userId != null){
             this.userservice.saveUser(response);
             Swal.fire({
@@ -38,7 +37,8 @@ export class SigninComponent implements OnInit {
               timer: 2000
             })
             setTimeout(()=>{
-              this.router.navigate(['/forum']);
+              /* window.location.href="http://localhost:4200/auth/me"; */
+              this.router.navigate(['/auth/me']);
             },3000)
         }
         else{

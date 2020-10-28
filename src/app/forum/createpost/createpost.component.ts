@@ -19,7 +19,7 @@ export class CreatepostComponent implements OnInit {
 
   constructor(private postService: Postservice,
               private router : Router) {
-                this.post = new Post();
+              this.post = new Post();
                }
 
   ngOnInit(): void {
@@ -40,6 +40,9 @@ export class CreatepostComponent implements OnInit {
         }
         else{
           this.router.navigate(['/forum']);
+          setTimeout(()=>
+          location.reload()
+          ,2000)
         }
        },3000);        
       },(error) =>{
